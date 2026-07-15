@@ -11,4 +11,7 @@ HF="${HF_CLI:-.venv-tts/bin/huggingface-cli}"
 "$HF" download Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice --local-dir models/Qwen3-TTS-12Hz-0.6B-CustomVoice
 "$HF" download Qwen/Qwen3-ASR-0.6B                  --local-dir models/Qwen3-ASR-0.6B
 
+# Tencent HunyuanOCR-1.5 (skip the archived v1.0 and the vLLM-only dflash draft)
+"$HF" download tencent/HunyuanOCR --local-dir models/HunyuanOCR --exclude "v1.0/*" "dflash/*"
+
 echo "All models downloaded into ./models"

@@ -153,12 +153,17 @@ activemq-data/
 .venv
 .venv-tts/
 .venv-asr/
+.venv-ocr/
+.venv-convert/
 env/
 venv/
 
-# Qwen TTS/STT app: downloaded model weights and generated audio
+# Qwen TTS/STT + OCR app: downloaded model weights and generated audio/images
 models/
 outputs/
+
+# Built third-party toolkits (e.g. llama.cpp for the OCR CPU path)
+vendor/
 ENV/
 env.bak/
 venv.bak/

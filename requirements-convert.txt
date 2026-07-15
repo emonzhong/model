@@ -1,0 +1,10 @@
+# GGUF conversion environment (.venv-convert), used only by scripts/convert_ocr_gguf.sh.
+# Mirrors llama.cpp's convert_hf_to_gguf requirements. Install CPU torch first:
+#   .venv-convert/bin/pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   .venv-convert/bin/pip install -r requirements-convert.txt
+numpy~=1.26.4
+sentencepiece>=0.1.98,<0.3.0
+gguf>=0.1.0
+protobuf>=4.21.0,<5.0.0
+transformers==4.57.6
+safetensors
