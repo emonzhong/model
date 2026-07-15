@@ -1,0 +1,8 @@
+# Qwen/Tencent OCR demo environment (.venv-ocr).
+# The working CPU path is llama.cpp + GGUF served by llama-server; the client and
+# the test-image generator only need Pillow (everything else is stdlib).
+#
+# The native transformers path (transformers>=5.13.0 + torch, HunYuanVLForConditionalGeneration)
+# exists but produces garbage on CPU for hunyuan_vl — it needs a GPU, so it is not
+# installed here by default.
+pillow==12.2.0

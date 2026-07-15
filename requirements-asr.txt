@@ -1,0 +1,6 @@
+# Qwen3-ASR environment (.venv-asr).
+# NOTE: install CPU torch first, then this file:
+#   .venv-asr/bin/pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+#   .venv-asr/bin/pip install -r requirements-asr.txt
+# qwen-asr pins transformers==4.57.6 (incompatible with qwen-tts, hence a separate venv).
+qwen-asr==0.0.6

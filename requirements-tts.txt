@@ -1,0 +1,7 @@
+# Qwen3-TTS environment (.venv-tts).
+# NOTE: install CPU torch first, then this file:
+#   .venv-tts/bin/pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+#   .venv-tts/bin/pip install -r requirements-tts.txt
+# qwen-tts pins transformers==4.57.3 (incompatible with qwen-asr, hence a separate venv).
+qwen-tts==0.1.1
+soundfile==0.14.0
