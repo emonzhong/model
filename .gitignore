@@ -151,8 +151,14 @@ activemq-data/
 .env
 .envrc
 .venv
+.venv-tts/
+.venv-asr/
 env/
 venv/
+
+# Qwen TTS/STT app: downloaded model weights and generated audio
+models/
+outputs/
 ENV/
 env.bak/
 venv.bak/
